@@ -1,0 +1,40 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Digital Combination Lock — Mikelle Evans</title><link rel="stylesheet" href="../style.css"><script data-goatcounter="https://mikellee.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script></head><body>
+<nav>
+  <div class="wrap">
+    <a class="brand" href="../index.html">Mikelle Evans</a>
+    <div class="links">
+      <a href="../index.html">Home</a>
+      <a href="../projects.html">Projects</a>
+      <a href="../skills.html">Technical Skills</a>
+      <a href="../education.html">Education &amp; Experience</a>
+      <a href="../contact.html">Contact</a>
+    </div>
+  </div>
+</nav>
+<main class="wrap detail">
+<a class="back" href="../projects.html">← All projects</a>
+<h1>Digital Combination Lock</h1><div class="role">Digital &amp; Micro Systems · RIT</div><div class="date">2025</div>
+<p class="lead">A combination lock built entirely from digital logic on an FPGA, enter the right code in binary and the display reads pass, get it wrong and it reads fail.</p>
+<div class="shots">
+<div class="shot"><img src="../images/lock-1.jpg" alt="The FPGA board with the lock running, lit display, next to the Quartus schematic on screen" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';"><div class="ph" style="display:none;flex-direction:column;"><b>Add Photo</b>lock-1.jpg</div></div>
+</div>
+<!-- VIDEO: cover opens the demo on YouTube in a new tab -->
+<a href="https://www.youtube.com/watch?v=aXo5F4TwHdg" target="_blank" rel="noopener" style="text-decoration:none;display:block;">
+<div class="video-wrap" style="position:relative;width:100%;max-width:480px;margin:24px auto 0;aspect-ratio:16/9;background:linear-gradient(160deg,#1b2129,#11141a);border-radius:14px;overflow:hidden;display:flex;align-items:center;justify-content:center;border:1px solid #2a2f37;cursor:pointer;">
+  <div style="display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:24px;">
+    <div style="width:62px;height:62px;border-radius:50%;background:rgba(255,176,170,0.92);display:flex;align-items:center;justify-content:center;margin-bottom:16px;box-shadow:0 6px 20px rgba(0,0,0,0.4);">
+      <div style="width:0;height:0;border-top:13px solid transparent;border-bottom:13px solid transparent;border-left:21px solid #13161b;margin-left:5px;"></div>
+    </div>
+    <div style="font-size:15px;font-weight:700;color:#f5f3f0;line-height:1.3;">Watch the lock in action</div>
+    <div style="font-size:12.5px;color:#c7ccd2;margin-top:6px;">Live demo &middot; entering codes &amp; pass/fail display</div>
+    <div style="font-size:11px;color:#9aa3af;margin-top:10px;">Opens on YouTube &#8599;</div>
+  </div>
+</div>
+</a>
+<h2>What I did</h2><p>For this two-person project, I designed a digital combination lock on an Altera FPGA board using Quartus. I built the logic with schematics, wiring up flip-flops and logic gates so the circuit could take in a code, hold it, and check it. The board's switches are the input: a switch down is a 0 and a switch up is a 1, so you enter the code in binary. Flipping switch 9 locks in the code, and pressing the clock button registers it. The seven-segment display then shows whether the code passed or failed.</p>
+<h2>How I tested it</h2><p>Before running it on the board, I simulated the design with waveforms in Quartus to confirm the logic behaved the way it should, that the right code produced a pass and anything else produced a fail. Then I assigned the pin inputs and outputs to map my logic onto the board's physical switches and display, and tested it live by entering different codes and watching the display respond.</p>
+<h2>What I took from it</h2><p>This project made digital logic real for me. Designing a working lock meant thinking through sequential logic and flip-flops, mapping a design onto real hardware, and verifying it in simulation before trusting it on the board. It is also the project that made Digital &amp; Micro Systems my favorite class.</p>
+<div class="tags"><span class="tag">Digital Logic</span><span class="tag">FPGA</span><span class="tag">Quartus</span><span class="tag">Flip-Flops</span><span class="tag">Schematic Design</span><span class="tag">Waveform Simulation</span><span class="tag">Pin Assignment</span></div>
+<a class="back" href="../projects.html">← All projects</a>
+</main><footer><div class="wrap"><span>Mikelle Evans — Engineering Portfolio</span><span>RIT · Expected May 2029</span></div></footer>
+<script src="../reveal.js"></script></body></html>
