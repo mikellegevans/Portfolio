@@ -1,0 +1,28 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>ASL Recognition Glove — Mikelle Evans</title><link rel="stylesheet" href="../style.css"><script data-goatcounter="https://mikellee.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script></head><body>
+<nav>
+  <div class="wrap">
+    <a class="brand" href="../index.html">Mikelle Evans</a>
+    <div class="links">
+      <a href="../index.html">Home</a>
+      <a href="../projects.html">Projects</a>
+      <a href="../skills.html">Technical Skills</a>
+      <a href="../education.html">Education &amp; Experience</a>
+      <a href="../contact.html">Contact</a>
+    </div>
+  </div>
+</nav>
+<main class="wrap detail">
+<a class="back" href="../projects.html">← All projects</a>
+<h1>ASL Recognition Glove</h1><div class="role">Personal Project · Self-Directed</div><div class="date">2026 – Present</div>
+<p class="lead">A glove that reads hand shapes using five flex sensors, one per finger, as a first step toward recognizing American Sign Language letters.</p>
+<div class="shots">
+<div class="shot"><img src="../images/glove-1.jpg" alt="ASL recognition glove" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';"><div class="ph" style="display:none;flex-direction:column;"><b>Add Photo</b>glove-1.jpg</div></div>
+<div class="shot"><img src="../images/glove-2.jpg" alt="Wrist-mounted board and wiring" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';"><div class="ph" style="display:none;flex-direction:column;"><b>Add Photo</b>glove-2.jpg</div></div>
+</div>
+<h2>What I built</h2><p>A glove with a flex sensor sewn along each finger. Each sensor sits in a voltage-divider circuit feeding an ESP32, so the amount a finger bends changes the voltage the board reads. The board is wrist-mounted, and all five sensors read live while the glove is worn.</p>
+<h2>Calibration</h2><p>Raw sensor values differ from finger to finger and person to person, so I wrote an auto-calibration routine: while the hand opens and closes, the firmware learns each finger's minimum and maximum and maps the readings to a clean 0–100% bend. That makes it possible to tell finger positions apart reliably instead of guessing from raw numbers.</p>
+<h2>What's next</h2><p>The hardware and sensing are done. The next phase is recognition, mapping sensor patterns to letters, starting rule-based and then training a machine-learning model to improve accuracy.</p>
+<div class="tags"><span class="tag">ESP32</span><span class="tag">Flex Sensors</span><span class="tag">Voltage Dividers</span><span class="tag">Embedded C++</span><span class="tag">Calibration</span><span class="tag">Sensor Integration</span></div>
+<a class="back" href="../projects.html">← All projects</a>
+</main><footer><div class="wrap"><span>Mikelle Evans — Engineering Portfolio</span><span>RIT · Expected May 2029</span></div></footer>
+<script src="../reveal.js"></script></body></html>
