@@ -15,8 +15,8 @@
 <a class="back" href="../projects.html">← All projects</a>
 <h1>ASL Recognition Glove</h1><div class="role">Personal Project · Self-Directed</div><div class="date">2026 – Present</div>
 <p class="lead">A glove that reads hand shapes using five flex sensors, one per finger, as a first step toward recognizing American Sign Language letters.</p>
-<div class="shots">
-<div class="shot"><img src="../images/glove-1.jpg" alt="ASL recognition glove with flex sensors" style="width:100%;height:100%;object-fit:cover;display:block;" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';"><div class="ph" style="display:none;flex-direction:column;"><b>Add Photo</b>glove-1.jpg</div></div>
+<div class="shots" style="grid-template-columns:1fr;max-width:440px;">
+<div class="shot" style="aspect-ratio:3/4;"><img src="../images/glove-1.jpg" alt="ASL recognition glove with flex sensors" style="width:100%;height:100%;object-fit:cover;display:block;" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';"><div class="ph" style="display:none;flex-direction:column;"><b>Add Photo</b>glove-1.jpg</div></div>
 </div>
 <h2>What I built</h2><p>A glove with a flex sensor sewn along each finger. Each sensor sits in a voltage-divider circuit feeding an ESP32, so the amount a finger bends changes the voltage the board reads. The board is wrist-mounted, and all five sensors read live while the glove is worn.</p>
 <h2>Calibration</h2><p>Raw sensor values differ from finger to finger and person to person, so I wrote an auto-calibration routine: while the hand opens and closes, the firmware learns each finger's minimum and maximum and maps the readings to a clean 0–100% bend. That makes it possible to tell finger positions apart reliably instead of guessing from raw numbers.</p>
