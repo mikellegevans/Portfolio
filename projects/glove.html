@@ -22,7 +22,7 @@
 </div>
 <h2>What I built</h2><p>A glove with a flex sensor sewn along each finger. Each sensor sits in a voltage-divider circuit feeding an ESP32, so the amount a finger bends changes the voltage the board reads. The board is wrist-mounted, and all five sensors read live while the glove is worn.</p>
 <h2>Calibration</h2><p>Raw sensor values differ from finger to finger and person to person, so I wrote an auto-calibration routine: while the hand opens and closes, the firmware learns each finger's minimum and maximum and maps the readings to a clean 0–100% bend. That makes it possible to tell finger positions apart reliably instead of guessing from raw numbers.</p>
-<h2>What's next</h2><p>The hardware and sensing are done. The next phase is recognition, mapping sensor patterns to letters, starting rule-based and then training a machine-learning model to improve accuracy.</p>
+<h2>What's next</h2><p>The hardware and sensing are done. The next phase is recognition, mapping sensor patterns to letters, starting rule-based, and then training a machine-learning model to improve accuracy.</p>
 <div class="tags"><span class="tag">ESP32</span><span class="tag">Flex Sensors</span><span class="tag">Voltage Dividers</span><span class="tag">Embedded C++</span><span class="tag">Calibration</span><span class="tag">Sensor Integration</span></div>
 <a class="back" href="../projects.html">← All projects</a>
 </main><footer><div class="wrap"><span>Mikelle Evans — Engineering Portfolio</span><span>RIT · Expected May 2029</span></div></footer>
